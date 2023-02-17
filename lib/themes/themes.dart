@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
 class themes {
-  static Color Maincolor = Color.fromRGBO(1, 114, 13, 1);
-  static Color appbarColor = Color.fromARGB(255, 37, 180, 51);
-  static Color goldMainColor = const Color.fromRGBO(216, 179, 31, 1);
-  static Color black = Color.fromRGBO(36, 36, 36, 1);
+  static Color Maincolor = Color.fromARGB(180, 4, 253, 91);
+  static Color secondColor = Color.fromARGB(50, 4, 253, 91);
+  static Color PikiaColor = Color.fromARGB(255, 232, 254, 226);
+  static Color black = Color.fromARGB(255, 194, 190, 190);
   static Color white = Colors.white;
 
   static final ThemeData lightmode = ThemeData(

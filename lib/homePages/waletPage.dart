@@ -10,10 +10,14 @@ class waletPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Column(
         children: [
-          Padding(
+          Container(
+            decoration: BoxDecoration(
+                color: themes.PikiaColor,
+                borderRadius: BorderRadius.vertical(
+                    bottom: Radius.circular(
+                        MediaQuery.of(context).size.height * .08))),
             padding:
                 EdgeInsets.only(right: MediaQuery.of(context).size.width * .06),
             child: Row(
@@ -21,7 +25,7 @@ class waletPage extends StatelessWidget {
               children: [
                 Container(
                     padding: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * .06),
+                        top: MediaQuery.of(context).size.height * .03),
                     alignment: Alignment.topLeft,
                     height: MediaQuery.of(context).size.height * .2,
                     child: Image.asset(
@@ -29,12 +33,14 @@ class waletPage extends StatelessWidget {
                     )),
                 Container(
                   padding: EdgeInsets.only(
-                      top: MediaQuery.of(context).size.height * .06),
+                      top: MediaQuery.of(context).size.height * .03),
                   alignment: Alignment.topLeft,
-                  height: MediaQuery.of(context).size.height * .2,
                   child: Text(
                     'كارد',
-                    style: TextStyle(color: themes.Maincolor, fontSize: 60),
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w500),
                   ),
                 ),
               ],
@@ -42,47 +48,43 @@ class waletPage extends StatelessWidget {
           ),
           Expanded(
               flex: 3,
-              child: Container(
-                margin: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.width * .04),
-                child: ListView(
-                  children: [
-                    Wrap(
-                      children: [
-                        Chip(
-                          backgroundColor: Colors.white,
-                          label: recicleBotton(),
-                        ),
-                        Chip(
-                          backgroundColor: Colors.white,
-                          label: recicleBotton(),
-                        ),
-                        Chip(
-                          backgroundColor: Colors.white,
-                          label: recicleBotton(),
-                        ),
-                        Chip(
-                          backgroundColor: Colors.white,
-                          label: recicleBotton(),
-                        ),
-                        Chip(
-                          backgroundColor: Colors.white,
-                          label: recicleBotton(),
-                        ),
-                        Chip(
-                          backgroundColor: Colors.white,
-                          label: recicleBotton(),
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+              child: ListView(
+                children: [
+                  Wrap(
+                    children: [
+                      Chip(
+                        backgroundColor: Colors.white,
+                        label: recicleBotton(),
+                      ),
+                      Chip(
+                        backgroundColor: Colors.white,
+                        label: recicleBotton(),
+                      ),
+                      Chip(
+                        backgroundColor: Colors.white,
+                        label: recicleBotton(),
+                      ),
+                      Chip(
+                        backgroundColor: Colors.white,
+                        label: recicleBotton(),
+                      ),
+                      Chip(
+                        backgroundColor: Colors.white,
+                        label: recicleBotton(),
+                      ),
+                      Chip(
+                        backgroundColor: Colors.white,
+                        label: recicleBotton(),
+                      ),
+                    ],
+                  )
+                ],
               )),
           Expanded(
             child: Column(
               children: [
                 Divider(
-                  color: themes.Maincolor,
+                  color: Colors.black,
                   thickness: 2,
                   indent: MediaQuery.of(context).size.width * .03,
                   endIndent: MediaQuery.of(context).size.width * .03,
@@ -95,7 +97,7 @@ class waletPage extends StatelessWidget {
                     children: [
                       Text(
                         'اجمالى عدد النقط = 0',
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: Theme.of(context).textTheme.headline3,
                       ),
                     ],
                   ),
@@ -108,7 +110,7 @@ class waletPage extends StatelessWidget {
                     children: [
                       Text(
                         'اجمالى المبلغ = 0',
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: Theme.of(context).textTheme.headline3,
                       ),
                     ],
                   ),

@@ -12,7 +12,8 @@ class recicleBotton extends StatelessWidget {
       width: MediaQuery.of(context).size.width * .4,
       height: MediaQuery.of(context).size.height * .28,
       decoration: BoxDecoration(
-          border: Border.all(color: themes.Maincolor, width: 2),
+          color: Colors.white,
+          border: Border.all(color: themes.black, width: 2),
           borderRadius: BorderRadius.circular(20)),
       child: Column(
         children: [
@@ -22,12 +23,13 @@ class recicleBotton extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * .09,
                 height: MediaQuery.of(context).size.width * .09,
                 decoration: BoxDecoration(
-                    border: Border.all(color: themes.Maincolor, width: 2),
+                    color: Colors.transparent,
+                    border: Border.all(color: themes.black, width: 2),
                     borderRadius: BorderRadius.circular(10)),
                 child: Text(
                   '0',
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.headline3,
                 ),
               )
             ],
@@ -35,11 +37,11 @@ class recicleBotton extends StatelessWidget {
           Image.asset('assets/image/potel.png'),
           Text(
             'data',
-            style: Theme.of(context).textTheme.subtitle1,
+            style: Theme.of(context).textTheme.headline3,
           ),
           Text(
             'dat',
-            style: Theme.of(context).textTheme.subtitle1,
+            style: Theme.of(context).textTheme.headline3,
           ),
           Expanded(
             child: Row(
@@ -51,13 +53,13 @@ class recicleBotton extends StatelessWidget {
                     child: IconButton(
                         onPressed: () {},
                         icon: Icon(Icons.minimize,
-                            size: MediaQuery.of(context).size.height * .05,
+                            size: MediaQuery.of(context).size.height * .04,
                             color: Colors.black)),
                   ),
                 ),
                 Text(
                   'data',
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.headline3,
                 ),
                 Expanded(
                   child: TextButton(
@@ -66,7 +68,7 @@ class recicleBotton extends StatelessWidget {
                           onPressed: () {},
                           icon: Icon(
                             Icons.add,
-                            size: MediaQuery.of(context).size.height * .05,
+                            size: MediaQuery.of(context).size.height * .04,
                             color: Colors.black,
                           ))),
                 )

@@ -4,10 +4,12 @@ import 'package:pikia/Editorial%20pages/page2.dart';
 import 'package:pikia/Editorial%20pages/page3.dart';
 import 'package:pikia/homePages/pikia/reciclingWedgit/plasticPage.dart';
 import 'package:pikia/loginPages/LoginPage.dart';
+import 'package:pikia/loginPages/Login1.dart';
 import 'package:pikia/themes/themes.dart';
 
 import 'homePages/homePage.dart';
 import 'loginPages/SaveAcountPage.dart';
+
 // younis comment
 void main() {
   runApp(const MyApp());
@@ -35,12 +37,27 @@ class MyApp extends StatelessWidget {
                   fontSize: 70,
                   fontWeight: FontWeight.bold,
                   color: themes.Maincolor),
-              subtitle1: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+              subtitle1: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white), headline3: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
               subtitle2: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w400,color: themes.Maincolor
-              ),
+                  fontSize: 25,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white),
+              headline1: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+              headline2: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w400,
+                  color: themes.Maincolor),
               headline5: TextStyle(
+                color: Colors.black,
                 fontSize: 60,
                 fontWeight: FontWeight.bold,
               )),
@@ -57,6 +74,7 @@ class MyApp extends StatelessWidget {
         homePage.routename: (context) => homePage(),
         LoginPage.routename: (context) => LoginPage(),
         PlasticPage.routename: (context) => PlasticPage(),
+        logen1.routename: (context) => logen1()
       },
     );
   }

@@ -23,17 +23,18 @@ class pikiaWidet extends StatelessWidget {
             top: MediaQuery.of(context).size.height * .01,
           ),
           decoration: BoxDecoration(
-              border: Border.all(color: themes.Maincolor, width: 2),
+              border: Border.all(color: themes.black, width: 2),
               borderRadius: BorderRadius.circular(25)),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(image),
               Expanded(
                   child: Text(
                 name,
-                style: Theme.of(context).textTheme.subtitle1,
-                textAlign: TextAlign.end,
-              ))
+                style: Theme.of(context).textTheme.headline1,
+                textAlign: TextAlign.center,
+              )),
+              Image.asset(image),
             ],
           ),
         ));
